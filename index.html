@@ -1,181 +1,510 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <!-- custom css -->
-    <link rel="stylesheet" href="style.css" />
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
 
-  <body>
-    <!-- header design -->
-    <header class="header">
-      <a href="#" class="logo">Portfolio</a>
+  <!-- Box Icons -->
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
 
-      <i class="bx bx-menu" id="menu-icon"></i>
-      <nav class="navbar">
-        <a href="#home" class="active">Home</a>
-        <a href="#about">About</a>
-        <a href="#portfolio">Portfolio</a>
-        <a href="#contact">contact</a>
-      </nav>
-    </header>
-    <!-- home section design -->
-    <section class="home" id="home">
-      <div class="home-content">
-        <h3>Hello, It's me</h3>
-        <h1>Satish Kumar Mirtipati</h1>
-        <h3>And I'm  <span class="multiple-text"></span></h3>
-        <p>
-         Currently Working as Assistant Professor in the department of Computer Science and Engineering at Centurion University of Technology and Management,Andhra Pradesh.
-        </p>
-        <div class="social-media">
-          <a href="https://www.facebook.com/share/15KAYPz3mW/?mibextid=wwXIfr"><i class="bx bxl-facebook"></i></a>
-          <a href="https://www.instagram.com/satishkumar_offcl?igsh=MWFxNjByNDU2a2tydQ%3D%3D&utm_source=qr"><i class="bx bxl-instagram"></i></a>
-          <a href="https://www.linkedin.com/in/satish-kumar-mirtipati-606166141?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><i class="bx bxl-linkedin"></i></a>
-          <a href="https://github.com/Sarishkumar"><i class="bx bxl-github"></i></a>
-        </div>
-        <a href="https://drive.google.com/file/d/1hQYrUUY7sTWP6NUEHe70miSllQB7NYcS/view?usp=sharing" class="btn">Download CV</a>
-      </div>
-      <div class="home-img">
-        <img src="images/home.jpg" alt="" />
-      </div>
-    </section>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+</head>
 
-    <!-- about section design -->
-    <section class="about" id="about">
-      <div class="about-img">
-        <img src="images/about.jpg" alt="" />
-      </div>
-      <div class="about-content">
-        <h2 class="heading">About <span>Me</span></h2>
-        <p>
-          Currently I am working as an Assistant Professor in the Department of Computer Science and Engineering at Centurion University of Technology and Management, Andhra Pradesh. I am actively involved in teaching, research, and guiding students in various domains, including IoT, cybersecurity, AI/ML, and networking. Additionally, I participate in workshops, technical summits, and university events while mentoring students in their academic and project work.
-        </p>
-        <br>
-        <a href="#" class="btn">Read More</a>
-      </div>
-    </section>
+<body>
 
-    <!-- services section design -->
+<!-- HEADER -->
+<header class="header">
+  <a href="#" class="logo">My Portfolio</a>
+  <i class="bx bx-menu" id="menu-icon"></i>
+
+  <nav class="navbar">
+  <div class="logo">My Portfolio</div>
+
+  <ul class="nav-links">
+    <li><a href="#home" class="active">Home</a></li>
+    <li><a href="#about">About</a></li>
+
+    <!-- DROPDOWN -->
+    <li class="dropdown">
+      <a href="javascript:void(0)">Academics ▾</a>
+      <ul class="dropdown-menu">
+        <li><a href="#experience" class="active">Experience</a></li>
+        <li><a href="#courses">Courses Handled</a></li>
+        <li><a href="#achievements">Professional Development</a></li>
+        <li><a href="#portfolio">Research</a></li>
+      </ul>
+    </li>
+
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+</header>
+
+<!-- HOME -->
+<section class="home" id="home">
+  <div class="home-content">
+    <h3>Hello, It's me</h3>
+    <h1>Satish Kumar Mirtipati</h1>
+    <h3>And I'm <span class="multiple-text"></span></h3>
+
+    <p>
+      Currently working as Assistant Professor in the Department of Information Engineering
+      and Computational Technology at MVGR College of Engineering (A),
+      Vizianagaram, Andhra Pradesh.
+    </p>
+
+    <div class="social-media">
+      <a href="https://www.facebook.com/share/15KAYPz3mW/?mibextid=wwXIfr" target="_blank"><i class="bx bxl-facebook"></i></a>
+      <a href="https://www.instagram.com/satishkumar_offcl" target="_blank"><i class="bx bxl-instagram"></i></a>
+      <a href="https://www.linkedin.com/in/satish-kumar-mirtipati-606166141" target="_blank"><i class="bx bxl-linkedin"></i></a>
+      <a href="https://github.com/Sarishkumar" target="_blank"><i class="bx bxl-github"></i></a>
+<!-- Google Scholar -->
+<a href="https://scholar.google.com/citations?user=qWa9os8AAAAJ&hl=en"
+   target="_blank"
+   class="scholar-icon"
+   title="Google Scholar">
+
+  <svg xmlns="http://www.w3.org/2000/svg"
+       viewBox="0 0 24 24"
+       width="22"
+       height="22"
+       fill="currentColor">
+    <path d="M12 2L1 9l11 7 9-5.73V17h2V9L12 2zm0 11.18L5.24 9 12 4.82 18.76 9 12 13.18z"/>
+    <path d="M12 14.5L6 11v5c0 2.76 4 5 6 5s6-2.24 6-5v-5l-6 3.5z"/>
+  </svg>
+
+</a>
+    </div>
+
+   
+  </div>
+
+  <div class="home-img">
+    <img src="images/home.jpg" alt="Profile Image" />
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="about-img">
+    <img src="images/about.jpg" alt="About Image">
+  </div>
+
+  <div class="about-content">
+    <h2 class="heading">About <span>Me</span></h2>
+
+    <p>
+      I am currently working as an Assistant Professor in the Department of Information Engineering
+      and Computational Technology at MVGR College of Engineering (A), Vizianagaram, Andhra Pradesh.
+      I am passionate about shaping the next generation of technology professionals through
+      strong academic instruction and hands-on learning.
+    </p>
+
+    <p>
+      My areas of expertise include Internet of Things (IoT), Cybersecurity, Artificial Intelligence,
+      Machine Learning, and Advanced Network Protocols. I actively contribute to workshops,
+      training programs, and research projects focused on real-world problem solving.
+    </p>
+
+    <p class="about-intro">
+      I’m especially enthusiastic about:
+    </p>
+
+    <ul class="about-list">
+      <li>Building smart IoT solutions (Smart Toilets, Health Monitoring systems)</li>
+      <li>Curriculum design, laboratory experiments, and assessment methodologies</li>
+      <li>Conducting workshops on Cyber Intelligence and Emerging Technologies</li>
+      <li>Guiding student projects, capstone projects, and research-oriented mini projects</li>
+      <li>Exploring AI/ML applications in policing, fraud detection, and digital wellness</li>
+      <li>Open to collaboration, networking, and continuous learning</li>
+    </ul>
+
+    <a href="#responsibilities" class="btn">Read More</a>
+  </div>
+</section>
+
+
+<!-- EXPERIENCE -->
+<section class="experience" id="experience">
+  <h2 class="heading">Professional <span>Experience</span></h2>
+
+  <div class="experience-container">
+    <div class="experience-box">
+      <h3>MVGR College of Engineering (Autonomous)</h3>
+      <p class="role">Assistant Professor</p>
+      <span class="duration">Jun 2025 – Present</span>
+    </div>
+    <div class="experience-box">
+      <h3>JNTU Gurajada Vizianagaram University</h3>
+      <p class="role">Member of Board of Studies (BOS) – MCA (PG)</p>
+      <span class="duration">Sep 2025 – Present</span>
+
+      <p class="role">Visiting Assistant Professor</p>
+      <span class="duration">Jul 2025 – Present</span>
+
+      <p class="role">Member of Board of Studies (BoS) – BCA (UG)</p>
+      <span class="duration">Aug 2024 – Present</span>
+    </div>
+
     
-    <!-- portfolio section design -->
-    <section class="portfolio" id="portfolio">
-      <h2 class="heading"><span>Research Articles and Patents </span></h2>
-      <div class="portfolio-container">
-        <div class="portfolio-box">
-          <img src="images/portfolio1.jpg" alt="" />
-          <div class="portfolio-layer">
-            <h4><span style="color:black;">Deep CNN-Based Brain MRI Classification for Alzheimer’s Diagnosis<span></h4>
-            <p>
-              
-            </p>
-            <a href="https://doi.org/10.52756/ijerr.2024.v41spl.004"><i class="bx bx-link-external"></i></a>
-          </div>
-        </div>
 
-        <div class="portfolio-box">
-          <img src="images/portfolio2.jpg" alt="" />
-          <div class="portfolio-layer">
-            <h4><span style="color:black;">ML-Based Liver Disease Detection & Management</span></h4>
-            <p>
-              
-            </p>
-            <a href="https://doi.org/10.52756/ijerr.2024.v42.009"><i class="bx bx-link-external"></i></a>
-          </div>
-        </div>
+    <div class="experience-box">
+      <h3>Centurion University of Technology & Management, Andhra Pradesh</h3>
+      <p class="role">Assistant Professor</p>
+      <span class="duration">Sep 2023 – Jun 2025</span>
 
-        <div class="portfolio-box">
-          <img src="images/portfolio3.jpg" alt="" />
-          <div class="portfolio-layer">
-            <h4><span style="color:black;">ML for Sentence-Level Sign Language Understanding</span></h4>
-            <p>
-              
-            </p>
-            <a href="https://doi.org/10.52756/ijerr.2024.v41spl.002"><i class="bx bx-link-external"></i></a>
-          </div>
-        </div>
+      <p class="role">Founder – Head of Department (BCA)</p>
+      <span class="duration">Aug 2024 – May 2025</span>
+    </div>
 
-        <div class="portfolio-box">
-          <img src="images/portfolio4.jpg" alt="" />
-          <div class="portfolio-layer">
-            <h4><span style="color:black;">DGMC-L1,2-Based Multi-Heart Disease Prediction
-            </span></h4>
-            <p>
-             
-            </p>
-            <a href="https://doi.org/10.3991/ijoe.v20i14.51371"><i class="bx bx-link-external"></i></a>
-          </div>
-        </div>
+  </div>
+</section>
 
-        <div class="portfolio-box">
-          <img src="images/portfolio5.jpg" alt="" />
-          <div class="portfolio-layer">
-            <h4><span style="color:black;">IoT-Driven Smart Traffic Monitoring & Accident Mitigation</span></h4>
-            <p>
-          
-            </p>
-            <a href=""><i class="bx bx-link-external"></i></a>
-          </div>
-        </div>
+<section class="courses" id="courses">
+  <h2 class="heading">Courses <span>Handled</span></h2>
 
-        <div class="portfolio-box">
-          <img src="images/portfolio6.jpg" alt="" />
-          <div class="portfolio-layer">
-            <h4></h4>
-            <p>
-              
-            </p>
-            <a href=""><i class="bx bx-link-external"></i></a>
-          </div>
-        </div>
+  <!-- CORE COURSES -->
+  <h3 class="sub-heading">Core Courses</h3>
+  <ul class="course-list">
+    <li>Network Virtualization and Cloud Computing</li>
+    <li>Wireless and Mobile Networking</li>
+    <li>IT Networking and Network Security</li>
+    <li>Network Protocols for Internet of Things (IoT)</li>
+    <li>Design and Analysis of Algorithms</li>
+    <li>IoT Analytics</li>
+    <li>Industrial IoT and Automation</li>
+    <li>Internet of Things</li>
+    <li>Cyber Security</li>
+    <li>Distributed Systems</li>
+    <li>Software Engineering</li>
+    <li>Advanced Hacking Techniques</li>
+    <li>Cloud Computing</li>
+    <li>Mobile Computing</li>
+  </ul>
+
+  <!-- SKILL COURSES -->
+  <h3 class="sub-heading">Skill Courses</h3>
+  <ul class="course-list">
+    <li>Computer Installation & Maintenance</li>
+  </ul>
+</section>
+<!-- ACHIEVEMENTS / PROFESSIONAL PROFILE -->
+<section class="achievements" id="achievements">
+
+  <!-- SECTION TITLE -->
+  <h2 class="heading">Professional <span>Achievements</span></h2>
+
+  <!-- INVITED TALKS -->
+  <h3 class="sub-heading">Invited Talks</h3>
+  <ul class="achievement-list">
+    <li>
+      <strong>Scientific Computing using IoT</strong><br>
+      Skill Development Cell, Jawaharlal Nehru Technological University – Gurajada Vizianagaram<br>
+      <em>28 November 2024</em>
+    </li>
+    <li>
+      <strong>Smart Skills for a Secure Future</strong><br>
+      Skill Development Cell, Jawaharlal Nehru Technological University – Gurajada Vizianagaram<br>
+      <em>11 June 2025</em>
+    </li>
+  </ul>
+
+  <!-- CERTIFICATIONS -->
+  <h3 class="sub-heading">Professional Certifications</h3>
+  <ul class="achievement-list">
+    <li>Cloud Computing and Distributed Systems – NPTEL</li>
+    <li>Introduction to Industry 4.0 and Industrial Internet of Things – NPTEL</li>
+    <li>Java Course for Placements – CodeTantra</li>
+    <li>Introduction to Internet of Things – CISCO Networking Academy</li>
+    <li>Artificial Intelligence with Machine Learning in Java – ORACLE Academy</li>
+    <li>Building Generative AI Applications Using Amazon Bedrock – AWS</li>
+    <li>Foundations of Prompt Engineering – AWS</li>
+    <li>Introduction to Generative AI: Art of the Possible – AWS</li>
+    <li>Introduction to Machine Learning: Art of the Possible – AWS</li>
+    <li>Server Analytics – AWS</li>
+    <li>Active Teaching Strategies – SWAYAM</li>
+    <li>AWS Partner: Generative AI on AWS for Financial Services – AWS</li>
+    <li>AWS Skills Centers: Becoming a Cloud Practitioner – Cloud Basics</li>
+    <li>AWS PartnerCast: Threat Modelling in the Era of Generative AI – AWS</li>
+    <li>AWS Skills Centers: Cloud Practitioner (Compute, Networking & Accounts)</li>
+    <li>Securely Connecting AWS IoT Devices to the Cloud – AWS</li>
+    <li>Introduction to Internet of Things – CISCO</li>
+    <li>Quantum Fundamentals and Advanced Algorithms – Qubitech</li>
+  </ul>
+
+  <!-- FACULTY DEVELOPMENT PROGRAMS -->
+  <h3 class="sub-heading">Attended Faculty Development Programs</h3>
+  <ul class="achievement-list">
+    <li>
+      <strong>Emerging Research Trends in Computer Science and Engineering</strong><br>
+      Fifteen-Day Short Term Course, JNTU-GV, Vizianagaram<br>
+      <em>26 June – 10 July 2023</em>
+    </li>
+    <li>
+      <strong>Current Trends in AI, ML & Deep Learning</strong><br>
+      Five-Day FDP, JNTU-GV, Vizianagaram<br>
+      <em>6 – 10 February 2023</em>
+    </li>
+    <li>
+      <strong>Empowering Cybersecurity through AI & ML</strong><br>
+      O. P. Jindal University, Raigarh<br>
+      <em>16 – 20 December 2024</em>
+    </li>
+    <li>
+      <strong>Outcome-Based Education & Generative AI in Teaching and Research</strong><br>
+      Government College for Women (Autonomous), Guntur<br>
+      <em>2 – 11 January 2025</em> — <strong>Grade A</strong>
+    </li>
+    <li>
+      <strong>AI-Driven Robotics and Industrial Automation for Industry 4.0</strong><br>
+      O. P. Jindal University, Raigarh<br>
+      <em>14 – 18 April 2025</em>
+    </li>
+    <li>
+      <strong>Professional Development Programme (PDP) on Machine Learning & Business Analytics Laboratory</strong><br>
+      Organized by School of Computing in collaboration with the Department of Mechanical Engineering,<br>
+      MVGR College of Engineering (Autonomous)<br>
+      <em>17 November 2025 – 22 November 2025</em>
+    </li>
+  </ul>
+
+  <!-- WORKSHOPS & CONFERENCES -->
+  <h3 class="sub-heading"> Attended Workshops & Conferences</h3>
+  <ul class="achievement-list">
+    <li>
+      <strong>Cyber Security Awareness Workshop</strong><br>
+      Regional Office, CID, Visakhapatnam<br>
+      <em>23 – 24 January 2024</em>
+    </li>
+    <li>
+      <strong>Andhra Pradesh Digital Technology Summit 2025</strong><br>
+      Visakhapatnam<br>
+      <em>8 – 9 January 2025</em>
+    </li>
+    <li>
+      <strong>ICMDESO-2025 – International Conference</strong><br>
+      ANITS, Visakhapatnam<br>
+      <em>28 – 29 March 2025</em>
+    </li>
+  </ul>
+
+</section>
+
+<!-- ================= RESEARCH ARTICLES & PATENTS ================= -->
+<section class="portfolio" id="portfolio">
+  <h2 class="heading">Research Articles & <span>Patents</span></h2>
+
+  <div class="portfolio-container">
+
+    <!-- 1 -->
+    <div class="portfolio-box">
+      <img src="images/portfolio1.jpg" alt="Brain MRI Classification">
+      <div class="portfolio-layer">
+        <h4>Deep CNN-Based Brain MRI Classification for Alzheimer’s Diagnosis</h4>
+        <a href="https://doi.org/10.52756/ijerr.2024.v41spl.004" target="_blank">
+          <i class="bx bx-link-external"></i>
+        </a>
       </div>
-    </section>
-    <!-- contact section design -->
-    <section class="contact" id="contact">
-      <h2 class="heading">Cantact <span>Me</span></h2>
-      <form action="#">
-        <div class="input-box">
-          <input type="text" placeholder="Full Name" />
-          <input type="email" placeholder="Email Address" />
-        </div>
-        <div class="input-box">
-          <input type="number" placeholder="Mobile Number" />
-          <input type="text" placeholder="Email Subject" />
-        </div>
-        <textarea 
-          name=""
-          id=""
-          cols="30"
-          rows="10"
-          placeholder="Your Message"
-        ></textarea>
-        <input type="submit" value="Send Message" class="btn" />
-      </form>
-    </section>
-    <!-- footer design -->
-    <footer class="footer">
-      <div class="footer-text">
-        <p>Mail:✉️satishkumarsrk@icloud.com<br>Contact No:📞+91 9100307727<br>Copyright &copy; 2025; by Satish kumar Mirtipati 
-          | All Rights Reserved.</p>
-      </div>
-      <div class="footer-iconTop">
-        <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
-      </div>
-    </footer>
-    <!-- scroll reveal -->
-    <script src="https://unpkg.com/scrollreveal"></script>
+    </div>
 
-    <!-- typed js -->
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!-- 2 -->
+    <div class="portfolio-box">
+      <img src="images/portfolio2.jpg" alt="Liver Disease Detection">
+      <div class="portfolio-layer">
+        <h4>ML-Based Liver Disease Detection and Management</h4>
+        <a href="https://doi.org/10.52756/ijerr.2024.v42.009" target="_blank">
+          <i class="bx bx-link-external"></i>
+        </a>
+      </div>
+    </div>
 
-    <!-- custom js -->
-    <script src="script.js"></script>
-  </body>
+    <!-- 3 -->
+    <div class="portfolio-box">
+      <img src="images/portfolio3.jpg" alt="Sign Language AI">
+      <div class="portfolio-layer">
+        <h4>Machine Learning for Sentence-Level Sign Language Understanding</h4>
+        <a href="https://doi.org/10.52756/ijerr.2024.v41spl.002" target="_blank">
+          <i class="bx bx-link-external"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- 4 -->
+    <div class="portfolio-box">
+      <img src="images/portfolio4.jpg" alt="Heart Disease Prediction">
+      <div class="portfolio-layer">
+        <h4>DGMC-L1,2 Based Multi-Heart Disease Prediction</h4>
+        <a href="https://doi.org/10.3991/ijoe.v20i14.51371" target="_blank">
+          <i class="bx bx-link-external"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- 5 -->
+    <div class="portfolio-box">
+      <img src="images/portfolio5.jpg" alt="Smart Traffic Monitoring">
+      <div class="portfolio-layer">
+        <h4>IoT-Based Smart Traffic Monitoring & Accident Mitigation</h4>
+        <a href="https://ieeexplore.ieee.org/document/9352918" target="_blank">
+          <i class="bx bx-link-external"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- 6 -->
+    <div class="portfolio-box">
+      <img src="/Users/satishkumar/Downloads/My documents/Satish/My portfolio/images/portfolio6.png" alt="">
+      <div class="portfolio-layer">
+        <h4>Chickpea disease Detection and Classification</h4>
+        <a href="https://www.sciencepubco.com/index.php/IJBAS/article/view/33363/18071" target="_blank">
+          <i class="bx bx-link-external"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- 7 -->
+    <div class="portfolio-box">
+      <img src="/Users/satishkumar/Downloads/My documents/Satish/My portfolio/images/portfolio7.png" alt="">
+      <div class="portfolio-layer">
+        <h4>Advanced skin lesion diagnosis with efficientnet-b7 feature extraction</h4>
+        <a href="https://www.sciencepubco.com/index.php/IJBAS/article/view/33278" target="_blank">
+          <i class="bx bx-link-external"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- 8 -->
+    <div class="portfolio-box">
+      <img src="images/portfolio8.jpg" alt="AI Surveillance">
+      <div class="portfolio-layer">
+        <h4>AI-Based Smart Surveillance System</h4>
+        <a href="https://github.com/topics/smart-surveillance" target="_blank">
+          <i class="bx bx-link-external"></i>
+        </a>
+      </div>
+    </div>
+
+    <!-- 9 -->
+    <div class="portfolio-box">
+      <img src="images/portfolio9.jpg" alt="Cybersecurity Analytics">
+      <div class="portfolio-layer">
+        <h4>Cybersecurity Threat Analytics Platform</h4>
+        <a href="https://github.com/topics/cybersecurity" target="_blank">
+          <i class="bx bx-link-external"></i>
+        </a>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- =============================================================== -->
+<!-- INDUSTRIAL VISITS & ACADEMIC ENGAGEMENTS -->
+<section class="gallery-section" id="engagements">
+  <h2 class="heading">Industrial Visits & <span>Academic Engagements</span></h2>
+
+  <div class="scroll-gallery">
+
+    <div class="gallery-card multi-image">
+
+      <div class="image-strip">
+        <img src="/Users/satishkumar/Downloads/My documents/Satish/My portfolio/images/workshop-jntu.jpg"
+             alt="Delivering invited talk on Smart Skills for a Secure Future at JNTU-GV">
+    
+        <img src="/Users/satishkumar/Downloads/My documents/Satish/My portfolio/images/Workshop jntu-2.jpeg"
+             alt="Interactive session with faculty and students at Smart Skills Workshop, JNTU-GV">
+    
+        <img src="/Users/satishkumar/Downloads/My documents/Satish/My portfolio/images/workshop jntu-3.jpeg"
+             alt="Participants attending Smart Skills for a Secure Future workshop at JNTU-GV">
+    
+        <img src="/Users/satishkumar/Downloads/My documents/Satish/My portfolio/images/worskshop jntu-2.jpg"
+             alt="Guest lecture and knowledge sharing session at JNTU-GV">
+      </div>
+    
+      <p class="caption">
+        <strong>Resource Person</strong> – Smart Skills for a Secure Future <br>
+        Jawaharlal Nehru Technological University – Gurajada Vizianagaram
+      </p>
+    
+    </div>
+
+    <<div class="gallery-card">
+
+      <div class="image-strip">
+        <img src="/Users/satishkumar/Downloads/My documents/Satish/My portfolio/images/apdts-2025.jpg" alt="APDTS 2025 – Main Stage">
+        <img src="/Users/satishkumar/Downloads/My documents/Satish/My portfolio/images/aptds-2.jpeg" alt="APDTS 2025 – Delegates">
+        <img src="/Users/satishkumar/Downloads/My documents/Satish/My portfolio/images/aptds3.jpeg" alt="APDTS 2025 – Exhibition Area">
+        <img src="/Users/satishkumar/Downloads/My documents/Satish/My portfolio/images/aptds4.jpeg" alt="APDTS 2025 – Networking Session">
+        <img src="/Users/satishkumar/Downloads/My documents/Satish/My portfolio/images/aptds5.jpeg" alt="APDTS 2025 – Closing Ceremony">
+      </div>
+    
+      <p class="caption">
+        Delegate Partner – Andhra Pradesh Digital Technology Summit 2025
+      </p>
+    
+    </div>
+
+    <div class="gallery-card">
+      <img src="/Users/satishkumar/Downloads/My documents/Satish/My portfolio/images/Guest Lecture .jpeg" alt="Guest Lecture">
+      <p class="caption">Guest Speaker – JNTU-GV Workshop & Certificate Presentation</p>
+    </div>
+
+    <div class="gallery-card">
+      <img src="/Users/satishkumar/Downloads/My documents/Satish/My portfolio/images/hackathon.jpg" alt="Hackathon Jury">
+      <p class="caption">Invited Guest – Yuvamanthan Hackathon, Central Tribal University</p>
+    </div>
+
+    <div class="gallery-card">
+      <img src="/Users/satishkumar/Downloads/My documents/Satish/My portfolio/images/industrial-visit.jpg" alt="Industrial Visit">
+      <p class="caption">Student Industrial Visits & Technical Exposure Program</p>
+    </div>
+    <div class="gallery-card">
+    <img src="/Users/satishkumar/Downloads/My documents/Satish/My portfolio/images/Cybercrime Workshop.jpeg" alt="Industrial Visit">
+    <p class="caption">Student Industrial Visits & Technical Exposure Program</p>
+  </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+  <h2 class="heading">Contact <span>Me</span></h2>
+
+  <form>
+    <div class="input-box">
+      <input type="text" placeholder="Full Name">
+      <input type="email" placeholder="Email Address">
+    </div>
+
+    <div class="input-box">
+      <input type="number" placeholder="Mobile Number">
+      <input type="text" placeholder="Email Subject">
+    </div>
+
+    <textarea cols="30" rows="10" placeholder="Your Message"></textarea>
+    <input type="submit" value="Send Message" class="btn">
+  </form>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-text">
+    <p>
+      ✉️ satishkumarsrk@icloud.com <br>
+      📞 +91 9100307727 <br>
+      © 2025 Satish Kumar Mirtipati | All Rights Reserved
+    </p>
+  </div>
+
+  <div class="footer-iconTop">
+    <a href="#home"><i class="bx bx-up-arrow-alt"></i></a>
+  </div>
+</footer>
+
+<script src="https://unpkg.com/scrollreveal"></script>
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+<script src="script.js"></script>
+
+</body>
 </html>
