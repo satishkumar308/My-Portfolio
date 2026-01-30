@@ -874,3 +874,102 @@ section .heading {
     font-size: 0.95rem;
     line-height: 1.4;
   }
+  /* =========================================================
+   FINAL UNIFORM GALLERY + HOVER SLIDESHOW (PRODUCTION SAFE)
+   ========================================================= */
+
+/* Horizontal gallery container */
+.scroll-gallery {
+    display: flex;
+    gap: 2.5rem;
+    overflow-x: auto;
+    padding: 2rem 0;
+    scroll-snap-type: x mandatory;
+  }
+  
+  /* Scrollbar styling */
+  .scroll-gallery::-webkit-scrollbar {
+    height: 6px;
+  }
+  .scroll-gallery::-webkit-scrollbar-thumb {
+    background: var(--main-color);
+    border-radius: 10px;
+  }
+  
+  /* Gallery card */
+  .gallery-card {
+    width: 320px;
+    flex-shrink: 0;
+    background: #162b3f;
+    border-radius: 18px;
+    padding: 14px;
+    scroll-snap-align: start;
+  }
+  
+  /* Image viewport — FIXES NON-UNIFORM SIZES */
+  .gallery-card .image-strip {
+    position: relative;
+    width: 100%;
+    height: 220px;               /* ✅ fixed height */
+    background: #0f2d44;
+    border-radius: 14px;
+    overflow: hidden;
+  }
+  
+  /* Images — ALL SAME SIZE */
+  .gallery-card .image-strip img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;           /* ✅ uniform look */
+    opacity: 0;
+    transition: opacity 0.6s ease;
+  }
+  
+  /* First image visible by default */
+  .gallery-card .image-strip img:first-child {
+    opacity: 1;
+  }
+  
+  /* Slideshow ONLY when hovering */
+  .gallery-card:hover .image-strip img {
+    animation: gallerySlide 6s infinite;
+  }
+  
+  /* Timing per image */
+  .gallery-card:hover .image-strip img:nth-child(1) { animation-delay: 0s; }
+  .gallery-card:hover .image-strip img:nth-child(2) { animation-delay: 2s; }
+  .gallery-card:hover .image-strip img:nth-child(3) { animation-delay: 4s; }
+  .gallery-card:hover .image-strip img:nth-child(4) { animation-delay: 6s; }
+  .gallery-card:hover .image-strip img:nth-child(5) { animation-delay: 8s; }
+  
+  /* Animation logic */
+  @keyframes gallerySlide {
+    0%   { opacity: 0; }
+    10%  { opacity: 1; }
+    40%  { opacity: 1; }
+    50%  { opacity: 0; }
+    100% { opacity: 0; }
+  }
+  
+  /* Caption */
+  .gallery-card .caption {
+    margin-top: 12px;
+    text-align: center;
+    font-size: 1.4rem;
+    color: #ffffff;
+    line-height: 1.4;
+  }
+  
+  /* ======================
+     MOBILE RESPONSIVENESS
+     ====================== */
+  @media (max-width: 768px) {
+    .gallery-card {
+      width: 85vw;
+    }
+    .gallery-card .image-strip {
+      height: 200px;
+    }
+  }
